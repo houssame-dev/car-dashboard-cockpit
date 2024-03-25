@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -27,24 +27,33 @@
   <body>
     <div class="container">
       <div class="part1">
-        <div>
-          <span>10.220 Km</span>
+        <div class="time-div">
+          <span><i class="fa-solid fa-clock"></i></span>
+          <span class="time"> </span>
         </div>
-        <div>
-          <span><i class="fa-regular fa-clock"></i></span> <span>09:40 AM</span>
+        <div class="date-div">
+          <span><i class="fa-solid fa-calendar-days"></i></span>
+          <span class="date"> </span>
         </div>
-        <div>
+        <div class="temperature-div">
           <span><i class="fa-solid fa-temperature-low"></i></span
           ><span>21° C</span>
         </div>
-        <div>
-          <span class="wifi">
-            <i class="fa-solid fa-wifi"></i>
-          </span>
-          <span>4G</span>
-          <span class="bluetooth">
-            <i class="fa-brands fa-bluetooth"></i>
-          </span>
+        <div class="location-div">
+          <span><i class="fa-solid fa-location-dot"></i></span
+          ><span>New York</span>
+        </div>
+        <div class="phone-icons-div">
+          <div class="satellite-div">
+            <span><i class="fa-solid fa-satellite"></i></span>
+          </div>
+          <div class="gsm-signal-div">
+            <span><i class="fa-solid fa-signal"></i></span>
+          </div>
+          <div class="battery-phone-div">
+            <span><i class="fa-solid fa-battery-full"></i></span>
+            <span>100%</span>
+          </div>
         </div>
       </div>
       <div class="part2">
@@ -53,16 +62,16 @@
         </div>
         <div class="direction">
           <div class="div1">
-            <span class="span1"
-              ><i class="fa-solid fa-diamond-turn-right"></i
-            ></span>
+            <span class="span1">
+              <i class="fa-solid fa-diamond-turn-right"></i>
+            </span>
             <br />
-            <span class="span2">200m</span>
+            <span class="span2">200 m</span>
           </div>
           <div class="div2">
             <span class="span1">Turn left</span>
             <hr />
-            <span class="span2">Rue Bourgogne</span>
+            <span class="span2">Castleton Ave</span>
           </div>
         </div>
         <div class="signal-right">
@@ -88,42 +97,72 @@
             <div class="tachometer-pointer-border"></div>
             <div class="tachometer-pointer-box"></div>
           </div>
+          <div class="tachometer-icons">
+            <span class="oil-icon"><i class="fa-solid fa-oil-can"></i></span>
+            <span class="door-icon">
+              <i class="fa-solid fa-door-open"></i>
+            </span>
+            <span class="triangle-icon">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+            </span>
+            <span class="key-icon">
+              <i class="fa-solid fa-key"></i>
+            </span>
+          </div>
         </div>
         <div class="middle">
           <div>
             <div class="middle-top">
-              <span class="number">274</span>
+              <span class="number">269</span> <br>
               <span class="km-h">Km/h</span>
             </div>
             <div class="middle-bottom">
               <div class="left-line"></div>
               <div>
                 <div class="gas-div">
-                  <span class="gas-icon"
-                    ><i class="fa-solid fa-gas-pump"></i
-                  ></span>
-                  <span>13 Km</span>
+                  <div>
+                    <span class="gas-icon">
+                      <i class="fa-solid fa-gas-pump"></i>
+                    </span>
+                  </div>
+                  <div>
+                    <span>9 L</span> <br />
+                    <span>12%</span>
+                  </div>
                 </div>
-                <input type="range" class="gas-range" value="10" disabled />
               </div>
               <div class="center-line">
-                <span style="color: rgba(255, 255, 255, 0.055)">|</span> <br />
-                <span style="color: rgba(255, 255, 255, 0.151)">|</span> <br />
-                <span style="color: rgba(255, 255, 255, 0.247)">|</span> <br />
-                <span style="color: rgba(255, 255, 255, 0.342)">|</span> <br />
-                <span style="color: rgba(255, 255, 255, 0.452)">|</span> <br />
-                <span style="color: rgba(255, 255, 255, 0.548)">|</span> <br />
-                <span style="color: rgba(255, 255, 255, 0.733)">|</span> <br />
-                <span style="color: white">|</span> <br />
+                <div>
+                  <span style="color: rgba(255, 255, 255, 0.055)">|</span>
+                </div>
+                <div>
+                  <span style="color: rgba(255, 255, 255, 0.151)">|</span>
+                </div>
+                <div>
+                  <span style="color: rgba(255, 255, 255, 0.452)">|</span>
+                </div>
+                <div>
+                  <span class="vehicle-icon">
+                    <i class="fa-solid fa-car-rear"></i>
+                  </span>
+                </div>
+                <div>
+                  <span style="color: rgba(255, 255, 255, 0.733)">|</span>
+                </div>
+                <div>
+                  <span style="color: white">|</span>
+                </div>
               </div>
               <div>
                 <div class="battery-div">
-                  <span class="battery-icon"
-                    ><i class="fa-solid fa-car-battery"></i
-                  ></span>
-                  <span>91 %</span>
+                  <span class="battery-icon">
+                    <i class="fa-solid fa-car-battery"></i>
+                  </span>
+                  <div>
+                    <span>12.8 V</span> <br />
+                    <span>100%</span>
+                  </div>
                 </div>
-                <input type="range" class="battery-range" value="91" disabled />
               </div>
               <div class="right-line"></div>
             </div>
@@ -147,9 +186,82 @@
             <div class="speedometer-pointer-border"></div>
             <div class="speedometer-pointer-box"></div>
           </div>
+          <div class="speedometer-klm">
+            <span>Km/h</span>
+          </div>
+        </div>
+      </div>
+      <div class="part4">
+        <div class="hover-div">
+          <div>
+            <span><i class="fa-solid fa-flag"></i></span>
+            <span>87269 Km</span>
+          </div>
+          <div>
+            <span class="tooltip-text">Tolal KM</span>
+          </div>
+        </div>
+        <div class="hover-div">
+          <div>
+            <span><i class="fa-solid fa-flag"></i></span>
+            <span>79 Km</span>
+          </div>
+          <div>
+            <span class="tooltip-text">KM Today</span>
+          </div>
+        </div>
+        <div class="hover-div">
+          <div>
+            <span><i class="fa-solid fa-stopwatch"></i></span>
+            <span>01 h 03 m</span>
+          </div>
+          <div>
+            <span class="tooltip-text">Driving Time</span>
+          </div>
+        </div>
+        <div class="hover-div">
+          <div>
+            <span><i class="fa-solid fa-stopwatch"></i></span>
+            <span>00 h : 02 m</span>
+          </div>
+          <div>
+            <span class="tooltip-text">Idle Time</span>
+          </div>
+        </div>
+        <div class="hover-div">
+          <div>
+            <span><i class="fa-solid fa-stopwatch"></i></span>
+            <span>00 h : 19 m</span>
+          </div>
+          <div>
+            <span class="tooltip-text">Stopping Time</span>
+          </div>
+        </div>
+        <div class="hover-div">
+          <div>
+            <span><i class="fa-solid fa-stopwatch"></i></span>
+            <span>00 h : 30 m</span>
+          </div>
+          <div>
+            <span class="tooltip-text">Current Status</span>
+          </div>
+        </div>
+        <div class="hover-div">
+          <div>
+            <span><i class="fa-solid fa-clock"></i></span>
+            <span>17 : 55</span>
+          </div>
+          <div>
+            <span class="tooltip-text">Started Driving</span>
+          </div>
         </div>
       </div>
     </div>
   </body>
   <script src="main.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
+    async
+    defer
+  ></script>
 </html>
